@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+Typical Device Breakpoints (Atuais 05/04/2025):
+-----------------------------------------------------------------
++ Pequenas telas:  Até 480px (Celulares antigos ou muito compactos)
++ Celular:480px - 767px (Celulares modernos)
++ Tablet: 768px a 1023px (Tablets em modo retrato e paisagem)
++ Desktop:1024px a 1279px (Laptops e Desktops menores) ou 1280px a 1919px (Desktops médios e monitores grandes)
++ Grandes Telas: 1920px em diante (Telas 1080p, 2K, 4K, SmartTVs)
+*/
+
+@media screen and (min-width:767px){
+    i#burger {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        width: 100px;
+    }
+
+    main {
+        width: 767px;
+    }
+}
