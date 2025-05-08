@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é  estrangeiro?</title>
+</head>
+<body>
+    <h1>Em qual país vocÊ vive?</h1>
+    <label for="inac">Digite seu país:</label>
+    <input type="text" name="nac"id="inac">
+
+    <input type="button" value="Checar" onclick="testar()">
+
+    <div id="res"></div>
+
+    <script>
+        function testar(){
+            var país = window.document.querySelector('input#inac').value
+            res.innerHTML = `<p>Vivendo em ${país}</p>`
+            if (país == 'Brasil') {
+                res.innerHTML += '<p>Você é Brasileiro!</p>'
+            }else{
+                res.innerHTML +='<p>Você é Estrangeiro</p>'
+            }
+        }
+    </script>
+
+</body>
+</html>
